@@ -1,2 +1,146 @@
-.center {text-align: center;}
-.judul {text-align: center;}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3ee;  
+    color: #243024;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    background-color: #2a408a;  
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto 25px auto; 
+}
+.header h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+.header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.kotak {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.kotak h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.tabel th {
+    background-color: #2a408a;
+    color: #ffffff;
+    padding: 12px;
+}
+.tabel td {
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+}
+.tabel tr:hover td {
+    background-color: #f1f8f3;   /* baris berubah warna saat disorot mouse */
+}
+
+.pengantar {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.tengah {
+    text-align: center;
+}
+.tombol {
+    display: inline-block;
+    background-color: #2a408a;
+    color: #ffffff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tombol:hover {
+    background-color: #3c5abd; 
+}
+.link-kembali {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2a408a;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+.form-group label {
+    display: block;              
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;      
+}
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2a408a;       
+}
+.form-centang label {
+    display: inline;
+    font-weight: normal;
+}
+.form .tombol {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 22px;
+    }
+    .tabel th,
+    .tabel td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.aksi {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.aksi-edit {
+    background-color: #2a408a;
+}
+.aksi-edit:hover {
+    background-color: #3c5abd;
+}
+.aksi-hapus {
+    background-color: #c0392b;
+}
+.aksi-hapus:hover {
+    background-color: #e04a3a;
+}
