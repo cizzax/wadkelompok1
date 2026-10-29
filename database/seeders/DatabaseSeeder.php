@@ -9,13 +9,20 @@ use Illuminate\Support\Facades\Hash;
 class DatabaseSeeder extends Seeder
 {
     public function run(): void
-        {
-            User::updateOrCreate(
+    {
+        User::updateOrCreate(
             ['username' => 'admin'],
-        [
-            'password' => Hash::make('admin123'),
-            'role' => 'admin',
-        ]
-     );
-}
+            [
+                'password' => Hash::make('admin123'),
+                'role' => 'admin',
+            ]
+        );
+        User::updateOrCreate(
+            ['username' => 'fairuz'],
+            [
+                'password' => Hash::make('fairuz123'),
+                'role' => 'admin',
+            ]
+        );
+    }
 }
