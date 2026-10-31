@@ -31,19 +31,19 @@
                 <div class="mb-3">
                     <label class="form-label">Nama</label>
                     <input type="text" name="nama" class="form-control"
-                           value="{{ old('nama', $pelanggan->nama) }}" required>
+                    value="{{ old('nama', $pelanggan->nama) }}" required>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Email</label>
                     <input type="email" name="email" class="form-control"
-                           value="{{ old('email', $pelanggan->email) }}" required>
+                    value="{{ old('email', $pelanggan->email) }}" required>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">No. Telepon</label>
                     <input type="text" name="nomor" class="form-control"
-                           value="{{ old('nomor', $pelanggan->nomor) }}" required>
+                    value="{{ old('nomor', $pelanggan->nomor) }}" required>
                 </div>
 
                 <div class="mb-4">
